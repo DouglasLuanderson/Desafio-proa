@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+header, .headerMenu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+}
+.headerMenu{
+	width: 50vw;
+}
+.headerMenu__link{
+	font-size: 20px;
+	margin:5px;
+	color: #69B284;
+	text-transform: uppercase;
+}
+.headerMenu__logo{
+	width: 80px;
+}
+.boxlandscape{
+	height: 80vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(assets/home.jpg);
+	background-size: cover;
+}
+.boxlandscapeParagraph{
+	width: 50vw;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+.about{
+	display: flex;
+}
+.aboutBlocktext{
+	width: 75vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	background-color: red;
+}
+.aboutBlocktext__img{
+	width: 200px;
+	height: 190px;
+}
+.aboutBlocktext__paragraph{
+	width: 400px;
+}
+.aboutBlockimage{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+}
+.aboutBlockimage__img{
+	width: 250px;
+}
