@@ -47,7 +47,6 @@ header, .headerMenu{
 }
 .aboutBlocktext{
 	width: 90vw;
-/*	height: 80vh;*/
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -108,7 +107,6 @@ header, .headerMenu{
 	width: 35vw;
 }
 .iconsActivities__image{
-	width: 200px;
 	height:250px;
 }
 .titlemedia{
@@ -118,7 +116,47 @@ header, .headerMenu{
 	align-items: center;
 }
 .media{
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+/*	background-color: yellow;*/
+}
+.mediaBlock{
+	width: 95vw;
 	display: flex;
 	justify-content: space-around;
-	padding: 10px;
+	background-color: pink;
+}
+.mediaBlock__video{
+	width: 45vw;
+	background-color: blue;
+}
+.mediaVideo__video{
+	min-width: 100%;
+    min-height: 100%;
+}
+.mediaBlock__news{
+	width: 45vw;
+	display: flex;
+	justify-content: space-around;
+	background-color: red;
+}
+.mediaBlock__newsBox{
+	width: 22vw;
+	background-color: green;
+}
+.mediaBlock__newsBox__img{
+	width: 100%;
+	height: 40vh;
+}
+.mediaBlock__newsBox__p, .mediaBlock__newsBox__p2{
+	width: 70%;
+	height: 10vh;
+	font-size: 15px;
+	background-color: white;
+}
+.mediaBlock__newsBox__p2{
+	width: 95%;
 }
