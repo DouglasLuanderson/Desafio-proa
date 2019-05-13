@@ -26,6 +26,7 @@ header, .headerMenu{
 .headerMenu__logo{
 	width: 80px;
 }
+/*section depois da header*/
 .boxlandscape{
 	height: 100vh;
 	display:flex;
@@ -42,11 +43,14 @@ header, .headerMenu{
 	font-size: 50px;
 	color: white;
 }
+
+/*pimeira section da main*/
+
 .about{
 	display: flex;
 }
 .aboutBlocktext{
-	width: 90vw;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -58,16 +62,44 @@ header, .headerMenu{
 }
 .aboutBlocktext__paragraph{
 	width: 400px;
+	padding: 10px;
 }
 .aboutBlockimage{
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1px 0px;
 }
 .aboutBlockimage__img{
-	width: 250px;
+	width: 290px;
+	height: 185px;
 }
+@media (max-width: 930px) {
+	.about{
+		flex-flow: wrap;
+	}
+	.aboutBlockimage{
+		width: 100%;
+		height: auto;
+		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.aboutBlockimage__img{
+		margin:10px;
+	}
+}
+@media (max-width: 680px) {
+	.aboutBlocktext{
+		flex-flow: wrap;
+	}
+	.aboutBlocktext__img{
+		margin-bottom: 30px;
+	}
+}
+/*segunda section da main*/
+
 .icons{
 	height: 100vh;
 	display: flex;
@@ -75,11 +107,12 @@ header, .headerMenu{
 	background-color: #FFF9BF;
 }
 .iconsBlock{
-	height: 25vh;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	align-items: center;
 	text-align: center;
+	padding: 15px;
 	background-color: #64B486;
 }
 .iconsBlock__links{
@@ -88,7 +121,8 @@ header, .headerMenu{
 	font-size: 1em;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	margin: 5px;	
 	border-radius: 50%;
 	color: #FFF;
 	background-color: #FD837E;
@@ -109,6 +143,17 @@ header, .headerMenu{
 .iconsActivities__image{
 	height:250px;
 }
+@media(max-width: 930px){
+	.icons{
+		height: auto;
+	}
+	.iconsActivities{
+		flex-direction: column;
+	}
+}
+
+/*terceira section da main*/
+
 .titlemedia{
 	height: 15vh;
 	display: flex;
@@ -124,7 +169,7 @@ header, .headerMenu{
 /*	background-color: yellow;*/
 }
 .mediaBlock{
-	width: 95vw;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	background-color: pink;
@@ -160,3 +205,53 @@ header, .headerMenu{
 .mediaBlock__newsBox__p2{
 	width: 95%;
 }
+@media(max-width: 930px){
+	.media{
+		height: auto;
+	}
+	.mediaBlock{
+		width: 95vw;
+		flex-direction: column;
+	}
+	.mediaBlock__video {
+    width: 100%;
+    height: 70vh;
+	}
+    .mediaBlock__news{
+    	width: 100%;
+    }
+}
+
+footer{
+	height: 80vh;
+	display: flex;
+	padding: 10px 0px 0px 10px;
+	background-image: url(assets/footer.jpg);
+	background-size: cover;
+}
+.contactfooter{
+	width: 75vw;
+	background-color: red;
+}
+.contactfooterTitle{
+	font-size: 45px;
+}
+.contactfooterParagraph2, .infofooterParagraph{
+	font-size: 30px;
+}
+.contactfooterBlock{
+	width: 100%;
+	background-color: yellow;
+}
+.imagefooter{
+	width: 270px;
+}
+.infofooter{
+	height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-self: flex-end;
+	margin-left: 20px;
+}
+
